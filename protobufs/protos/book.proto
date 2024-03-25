@@ -1,0 +1,13 @@
+syntax = "proto3";
+package proto;
+option go_package = "./";
+
+message data {
+    string name=1;
+    string email=2;
+    int32 id=3;
+}
+
+message book{
+    repeated data person=1;
+}
