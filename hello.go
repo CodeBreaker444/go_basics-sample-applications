@@ -89,5 +89,15 @@ func packages(){
 	bin:=binary(35)
 	fmt.Println("Binary:",bin)
 	loops(3)
+	i1,i2 :=interesting_things("γ","count")
+	fmt.Printf("γ: %v, count: %v, type: %T",i1, i2, i1)
+	arrays_slices()
+	houseDetails()
+	pointer()
+	coroutines()
+	main_channel()
+	generics[int](2)
+
+
 
 }
